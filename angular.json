@@ -28,10 +28,10 @@
             ],
             "styles": [
               "src/styles.scss",
-              "./node_modules/materialize-css/dist/css/materialize.min.css"
+              "src/materialize-src/sass/materialize.scss"
             ],
             "scripts": [
-              "./node_modules/materialize-css/dist/js/materialize.min.js"
+              "src/materialize-src/js/bin/materialize.js"
             ]
           },
           "configurations": {
@@ -78,10 +78,13 @@
             "karmaConfig": "src/karma.conf.js",
             "styles": [
               "src/styles.scss",
-              "src/material-src/sass/materialize.scss"
+              "node_modules/materialize-css/dist/css/materialize.min.css"
+
             ],
             "scripts": [
-              "src/material-src/bin/materialize.min.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/hammerjs/hammer.js",
+              "node_modules/materialize-css/dist/js/materialize.min.js"
 
             ],
             "assets": [
