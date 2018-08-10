@@ -10,8 +10,6 @@ export class NavigationComponent implements OnInit {
     constructor() {}
 
     ngOnInit() {}
-    private function() {
-        $('');
-        jQuery('.button').alert('Hi');
-    }
+    
+    
 }
