@@ -98,13 +98,22 @@
 
 
 <div class="cta" style="text-align: center;">
-  <a class="waves-effect waves-pink btn-large red white-text pulse darken-2" (click)="getPerson()">
+  <a class="waves-effect waves-pink btn-large red white-text pulse darken-2" (click)="openDialog()">
     <span class="lead">Report Missing Person</span>
     <br>
   </a>
 </div>
 <br>
 <br>
+
+<li>
+  <button mat-raised-button (click)="openDialog()">Pick one</button>
+</li>
+
+<br>
+<br>
+
+
 <div class="container">
   <div class="row">
     <div class="social col-lg-4">
@@ -159,3 +168,10 @@
   </div>
   <div class="clearfix"></div>
 </div>
+
+<ul>
+  <li *ngFor="let missing_person of missing_persons | async">
+    <pre>{{ missing_person | json }}</pre>
+    <!-- <img src="missing_person.image" alt=""> -->
+  </li>
+</ul>
